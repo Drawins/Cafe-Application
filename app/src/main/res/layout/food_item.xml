@@ -38,9 +38,10 @@
             android:layout_height="wrap_content"
             android:textColor="@color/black"
             tools:text="Name"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginStart="150dp"/>
 
-        <!-- TextView for displaying description -->
         <TextView
             android:id="@+id/discriptionTextView"
             android:layout_width="wrap_content"
@@ -54,8 +55,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
-            android:layout_marginStart="180dp"
+            android:layout_marginStart="170dp"
             tools:text="Price"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:textSize="16sp"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

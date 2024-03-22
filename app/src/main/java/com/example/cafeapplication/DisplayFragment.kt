@@ -39,12 +39,8 @@ class DisplayFragment : Fragment() {
             override fun onResponse(call: Call<List<Food>>, response: Response<List<Food>>) {
                 if (response.isSuccessful) {
                     foodList.clear()
-                    // Add all the received food items to the list
                     response.body()?.let { foodList.addAll(it) }
-                    // Notify adapter about the data change
                     foodAdapter.notifyDataSetChanged()
-                } else {
-
                 }
             }
             override fun onFailure(call: Call<List<Food>>, t: Throwable) {
