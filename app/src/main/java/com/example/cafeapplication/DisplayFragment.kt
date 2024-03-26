@@ -1,6 +1,7 @@
 package com.example.cafeapplication
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -44,7 +45,7 @@ class DisplayFragment : Fragment() {
                 }
             }
             override fun onFailure(call: Call<List<Food>>, t: Throwable) {
-
+                Log.e("HomeFragment", "Failed to get Adz data: ${t.message}")
             }
         })
     }
